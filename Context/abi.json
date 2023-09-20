@@ -1,0 +1,314 @@
+[
+  {
+    "type": "function",
+    "name": "donateToImage",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "_id",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "getAllNFTs",
+    "inputs": [],
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "components": [
+          {
+            "type": "string",
+            "name": "title",
+            "internalType": "string"
+          },
+          {
+            "type": "string",
+            "name": "description",
+            "internalType": "string"
+          },
+          {
+            "type": "string",
+            "name": "email",
+            "internalType": "string"
+          },
+          {
+            "type": "string",
+            "name": "category",
+            "internalType": "string"
+          },
+          {
+            "type": "address",
+            "name": "creator",
+            "internalType": "address payable"
+          },
+          {
+            "type": "string",
+            "name": "image",
+            "internalType": "string"
+          },
+          {
+            "type": "uint256",
+            "name": "timestamp",
+            "internalType": "uint256"
+          },
+          {
+            "type": "uint256",
+            "name": "id",
+            "internalType": "uint256"
+          },
+          {
+            "type": "uint256",
+            "name": "fundraised",
+            "internalType": "uint256"
+          }
+        ],
+        "internalType": "struct nftsIPFS.NFTs[]"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getImage",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "id",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      },
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address payable"
+      },
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      },
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      },
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      },
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "imagesCount",
+    "inputs": [],
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "listingPrice",
+    "inputs": [],
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "nftImages",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "string",
+        "name": "title",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "description",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "email",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "category",
+        "internalType": "string"
+      },
+      {
+        "type": "address",
+        "name": "creator",
+        "internalType": "address payable"
+      },
+      {
+        "type": "string",
+        "name": "image",
+        "internalType": "string"
+      },
+      {
+        "type": "uint256",
+        "name": "timestamp",
+        "internalType": "uint256"
+      },
+      {
+        "type": "uint256",
+        "name": "id",
+        "internalType": "uint256"
+      },
+      {
+        "type": "uint256",
+        "name": "fundraised",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "updateListingPrice",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "_listingPrice",
+        "internalType": "uint256"
+      },
+      {
+        "type": "address",
+        "name": "owner",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "uploadIPFS",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_creator",
+        "internalType": "address payable"
+      },
+      {
+        "type": "string",
+        "name": "_image",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "_title",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "_description",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "_email",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "_category",
+        "internalType": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      },
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      },
+      {
+        "type": "address",
+        "name": "",
+        "internalType": "address payable"
+      },
+      {
+        "type": "string",
+        "name": "",
+        "internalType": "string"
+      }
+    ],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "withdraw",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "owner",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]
